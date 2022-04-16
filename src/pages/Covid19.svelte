@@ -1,4 +1,3 @@
-<script>
-    
-</script>
-<h1>Covid</h1>
+<section class="bg-covid19">
+
+</section>

@@ -111,5 +111,7 @@
     }
     .navigation{
         position: fixed; width:100%; bottom:0;
+        background-color: #ffffff;
+        padding-top: 1%;
     }
 </style>

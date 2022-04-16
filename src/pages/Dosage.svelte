@@ -1,4 +1,3 @@
-<script>
-    
-</script>
-<h1>Dosage</h1>
+<section class="bg-dosage">
+
+</section>

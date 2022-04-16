@@ -9,6 +9,9 @@
 	import Covid19 from "./pages/Covid19.svelte";
 	import Dosage from "./pages/Dosage.svelte";
 
+	const password = "123";
+	let bind_password = "";
+
 	const routes = {
 		"/": Home,
 		"/action": Action,
@@ -19,6 +22,7 @@
 		// '*': NotFound
 	};
 </script>
+
 
 <Router {routes} />
 

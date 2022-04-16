@@ -1,4 +1,3 @@
-<script>
-    
-</script>
-<h1>Efficacy</h1>
+<section class="bg-efficacy">
+
+</section>

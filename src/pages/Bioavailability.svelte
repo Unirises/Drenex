@@ -1,4 +1,3 @@
-<script>
-    
-</script>
-<h1>Bio</h1>
+<section class="bg-bioavailability">
+
+</section>
