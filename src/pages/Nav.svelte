@@ -1,82 +1,115 @@
-<nav class="navbar navbar-expand-lg navigation">
-    <img src="assets/nav/BAR-LOGO.png" style="width: 18%;" alt="" />
-    <a href="#/">
-    <button class="button btn-sm flex-grow-1 ml-3">
-        <img
-            src="assets/nav/clicked/BUTTON-HOME_CLICKED.png"
-            style="width: 100%; margin-top:-10%;"
-            alt=""
-        />
-    </button>
-</a>
-<a href="#/action">
-    <button class="btn-sm flex-grow-1">
-        <img
-            src="assets/nav/default/BUTTON-ACTION_DEFAULT.png"
-            style="width: 100%;"
-            alt=""
-        />
-    </button>
-    </a>
-    <a href="#/efficacy">
-    <button class="btn-sm flex-grow-1">
-        <img
-            src="assets/nav/default/BUTTON-EFFICACY_DEFAULT.png"
-            style="width: 100%;"
-            alt=""
-        />
-    </button>
-    </a>
-    <a href="#/bio">
-    <button class="btn-sm flex-grow-1">
-        <img
-            src="assets/nav/default/BUTTON-BIOAVAILABILITY_DEFAULT.png"
-            style="width: 100%;"
-            alt=""
-        />
-    </button>
-    </a>
-    <a href="#/covid19">
-    <button class="btn-sm flex-grow-1">
-        <img
-            src="assets/nav/default/BUTTON-COVID19_DEFAULT.png"
-            style="width: 100%;"
-            alt=""
-        />
-    </button>
-    </a>
-    <a href="#/dosage">
-    <button class="btn-sm flex-grow-1">
-        <img
-            src="assets/nav/default/BUTTON-DOSAGE_DEFAULT.png"
-            style="width: 100%;"
-            alt=""
-        />
-    </button>
-    </a>
-    <a href="ex">
-    <button class="btn-sm flex-grow-1">
-        <img
-            src="assets/nav/default/BUTTON-EXIT_DEFAULT.png"
-            style="width: 100%;"
-            alt=""
-        />
-    </button>
-    </a>
-</nav>
+<script>
+    import {link, location} from 'svelte-spa-router'
+    let current_page = window.location.href.split('/').pop();
+    function activeNav(event) {
+      current_page =window.location.href.split('/').pop()
+      console.log(current_page);
+    }
+  </script>
+  
+<div class="navigation">
+    <div class="d-grid gap1">
+        <div id="full" class="d-flex mb-1">
+            <img src="assets/nav/BAR-LOGO.png" style="margin-right: 5%; margin-left:2%;" alt="" />
+            <a href="#/" use:link class="flex-fill mr-2" on:click="{(event)=> {activeNav(event)}}">
+                {#if current_page == ''}
+                <button type="button" style="width: 100%; height:110%;" class="btnBGS"
+                    >HOME</button
+                >
+                {:else}
+                <button type="button" style="width: 100%; height:100%;" class="btnBG"
+                    >HOME</button
+                >
+                {/if}
+            </a>
+
+            
+            <a href="#/action" use:link class="flex-fill mr-2" on:click="{(event)=> {activeNav(event)}}">
+                {#if current_page == 'action'}
+                <button type="button" style="width: 100%; height:110%;" class="btnBGS"
+                    >ACTION</button
+                >
+                {:else}
+                <button type="button" style="width: 100%; height:100%;" class="btnBG"
+                    >ACTION</button
+                >
+                {/if}
+            </a>
+            <a href="#/efficacy" use:link class="flex-fill mr-2" on:click="{(event)=> {activeNav(event)}}">
+                {#if current_page == 'efficacy'}
+                <button type="button" style="width: 100%; height:110%;" class="btnBGS"
+                    >EFFICACY</button
+                >
+                {:else}
+                <button type="button" style="width: 100%; height:100%;" class="btnBG"
+                    >EFFICACY</button
+                >
+                {/if}
+            </a>
+            <a href="#/bio" use:link class="flex-fill mr-2" on:click="{(event)=> {activeNav(event)}}">
+                {#if current_page == 'bio'}
+                <button type="button" style="width: 100%; height:110%;" class="btnBGS"
+                    >BIOAVAILABILITY</button
+                >
+                {:else}
+                <button type="button" style="width: 100%; height:100%;" class="btnBG"
+                    >BIOAVAILABILITY</button
+                >
+                {/if}
+            </a>
+            <a href="#/covid19" use:link class="flex-fill mr-2" on:click="{(event)=> {activeNav(event)}}">
+                {#if current_page == 'covid19'}
+                <button type="button" style="width: 100%; height:110%;" class="btnBGS"
+                    >COVID-19</button
+                >
+                {:else}
+                <button type="button" style="width: 100%; height:100%;" class="btnBG"
+                    >COVID-19</button
+                >
+                {/if}
+            </a>
+            <a href="#/dosage" use:link class="flex-fill mr-2" on:click="{(event)=> {activeNav(event)}}">
+                {#if current_page == 'dosage'}
+                <button type="button" style="width: 100%; height:110%;" class="btnBGS"
+                    >DOSAGE</button
+                >
+                {:else}
+                <button type="button" style="width: 100%; height:100%;" class="btnBG"
+                    >DOSAGE</button
+                >
+                {/if}
+            </a>
+            <button type="button" class="flex-fill btnBG2"
+                >EXIT</button
+            >
+        </div>
+    </div>
+</div>
 
 <style>
-    .navigation {
-        position: absolute;
-        bottom: 0;
+    .btnBG{
+        background-color: #ff9d14;
+        color: white;
+        font-weight: bold;
     }
-    button {
-        background: none;
-        border: none;
-        cursor: pointer;
+    .btnBG2{
+        background-color: #ff0000;
+        color: white;
+        font-weight: bold;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
-    *:focus {
-        outline: 0 !important;
-        background: none;
+    
+    .btnBGS{
+        background-color: #ff6600;
+        margin-top:-8px;
+        height: 32px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .navigation{
+        position: fixed; width:100%; bottom:0;
     }
 </style>

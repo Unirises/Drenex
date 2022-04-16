@@ -21,4 +21,6 @@
 </script>
 
 <Router {routes} />
+
+
 <Nav />
