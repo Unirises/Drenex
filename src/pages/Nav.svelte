@@ -91,6 +91,7 @@
         background-color: #ff9d14;
         color: white;
         font-weight: bold;
+        margin-top:3px;
     }
     .btnBG2{
         background-color: #ff0000;
@@ -102,7 +103,7 @@
     
     .btnBGS{
         background-color: #ff6600;
-        margin-top:-8px;
+        margin-top:-5px;
         height: 32px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -112,6 +113,6 @@
     .navigation{
         position: fixed; width:100%; bottom:0;
         background-color: #ffffff;
-        padding-top: 1%;
+        padding-top: 5px;
     }
 </style>
