@@ -26,5 +26,4 @@
 
 <Router {routes} />
 
-
 <Nav />
