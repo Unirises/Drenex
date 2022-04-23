@@ -2,7 +2,9 @@
     import { fade, slide,scale, fly } from 'svelte/transition'
     let reference = "closed";
 </script>
-
+<svelte:head>
+  <title>Drenex | Action</title>
+</svelte:head>
 <section class="bg-action">
     <div class="text-center" >
         <img

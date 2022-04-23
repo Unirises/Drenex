@@ -2,6 +2,9 @@
     import { fade, slide,scale, fly } from 'svelte/transition'
     let reference = "closed";
 </script>
+<svelte:head>
+  <title>Drenex | DOSAGE</title>
+</svelte:head>
 <section class="bg-dosage">
 
     {#if reference == "closed"}

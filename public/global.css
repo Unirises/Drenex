@@ -84,6 +84,13 @@ button:focus {
     height: 100%;
 }
 
+.bg-efficacy-blur {
+    background-image: url('assets/3//clicked/EFFICACY-BACKGROUND-BLUR.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
 .bg-bioavailability {
     background-image: url('assets/4/BIOA-BACKGROUND-1.png');
     background-repeat: no-repeat;
@@ -91,8 +98,22 @@ button:focus {
     height: 100%;
 }
 
+.bg-bioavailability-blur {
+    background-image: url('assets/4/clicked/BIOA-BACKGROUND-2-BLUR.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
 .bg-covid19 {
     background-image: url('assets/5/COVID19-BACKGROUND.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.bg-covid19-blur {
+    background-image: url('assets/5/clicked/COVID19-BACKGROUND-BLUR.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100%;

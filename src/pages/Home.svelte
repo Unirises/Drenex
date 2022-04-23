@@ -1,6 +1,9 @@
 <script>
     import { fade, slide,scale, fly } from 'svelte/transition'
 </script>
+<svelte:head>
+  <title>Drenex | Home</title>
+</svelte:head>
 <section class="bg-home">
 
     <div class="row">

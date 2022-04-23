@@ -114,6 +114,7 @@
         position: absolute; width:100%; bottom:0;
         background-color: #ffffff;
         padding-top: 5px;
+        z-index: 1000;
     }
     button:focus {
         outline: 0;
