@@ -1,19 +1,21 @@
 <script>
+    import { fade, slide,scale, fly } from 'svelte/transition'
     let reference = "closed";
 </script>
 
 <section class="bg-action">
-    <div class="text-center">
+    <div class="text-center" >
         <img
             src="assets/2/ACTION-HEADER.png"
             style="width: 70%; margin-top:5%;"
             alt=""
+            
         />
     </div>
 
-    
+
 {#if reference == "closed"}
-    <button class="ref2" on:click="{()=> {reference = "open"}}">
+    <button class="ref2" in:fade out:fade on:click="{()=> {reference = "open"}}">
         <img
         src="assets/2/Reference/ACTION-REFERENCE-TAB.png"
         class="reference2"
@@ -22,7 +24,7 @@
     </button>
     {/if}
     {#if reference == "open"}
-    <button class="ref" on:click="{()=> {reference = "closed"}}">
+    <button class="ref" in:fly="{{ x: 500, duration: 1000 }}" out:fly="{{ x: 500, duration: 1000 }}" on:click="{()=> {reference = "closed"}}">
         <img
         src="assets/2/Reference/ACTION-REFERENCE-TAB-ACTIVE-WTEXT.png"
         class="reference"

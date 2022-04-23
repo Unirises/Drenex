@@ -10,7 +10,7 @@
 <div class="navigation">
     <div class="d-grid gap1">
         <div id="full" class="d-flex mb-1">
-            <img src="assets/nav/BAR-LOGO.png" style="margin-right: 5%; margin-left:2%;" alt="" />
+            <img src="assets/nav/BAR-LOGO.png" style="margin-right: 5%; margin-left:2%; width:14%;" alt="" />
             <a href="#/" use:link class="flex-fill mr-2" on:click="{(event)=> {activeNav(event)}}">
                 {#if current_page == ''}
                 <button type="button" style="width: 100%; height:110%;" class="btnBGS"
@@ -103,7 +103,7 @@
     
     .btnBGS{
         background-color: #ff6600;
-        margin-top:-5px;
+        margin-top:-4px;
         height: 32px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -111,8 +111,14 @@
         font-weight: bold;
     }
     .navigation{
-        position: fixed; width:100%; bottom:0;
+        position: absolute; width:100%; bottom:0;
         background-color: #ffffff;
         padding-top: 5px;
+    }
+    button:focus {
+        outline: 0;
+        background-color: #ff6600;
+        background: #ff6600;
+        border: none;
     }
 </style>
