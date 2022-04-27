@@ -33,7 +33,7 @@
     {#if reference == "open"}
     <button class="ref" in:fly="{{ x: 500, duration: 1000 }}" out:fly="{{ x: 500, duration: 1000 }}" on:click="{()=> {reference = "closed"}}">
         <img
-        src="assets/2/Reference/ACTION-REFERENCE-TAB-ACTIVE-WTEXT.png"
+        src="assets/6/References/DOSAGE-REFERENCE-TAB-ACTIVE-wtext.png"
         class="reference"
         alt=""
     />
