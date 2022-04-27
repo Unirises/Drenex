@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+img:not(.button):not(.button-interact):not(.pop) {
+    pointer-events: none;
+    user-select: none;
+}
+
+.pop {
+    @apply transform scale-[0.1] opacity-0 transition duration-300;
+}
+
+.pop-open {
+    @apply scale-100 opacity-100 cursor-pointer;
+}
+
+.pop-open:active {
+    @apply scale-[0.95]
+}
+
+.button {
+    @apply transition-all transform scale-100 active: scale-95 drop-shadow-md;
+}
+
+.efficacy-button {
+    @apply transition-all duration-[400ms] fixed h-auto z-20
+}
+
+.button:hover {
+    @apply transition-all cursor-pointer drop-shadow-2xl transform scale-[1.01] active: scale-95
+}
+
+.button-interact {
+    @apply transition-all transform scale-100 drop-shadow-md cursor-pointer select-none;
+}
+
+.button-interact:hover {
+    @apply drop-shadow-2xl transform scale-[1.03] active: scale-95
+}
+
+.bg-main {
+    @apply bg-[url('/src/images/background-authentication.jpg')] bg-fixed bg-no-repeat bg-cover w-full h-auto;
+}
+
+.bg-home {
+    @apply bg-[url('/src/images/background.jpg')] bg-fixed bg-no-repeat bg-cover w-full h-auto;
+}
+
+.bg-efficacy {
+    @apply bg-[url('/src/images/background-efficacy.jpg')] bg-fixed bg-no-repeat bg-cover w-full h-auto;
+}
+
+.bg-symptom-relief {
+    @apply bg-[url('/src/images/background-symptom-relief.jpg')] bg-fixed bg-no-repeat bg-cover w-full h-auto;
+}
+
+.bg-pricing {
+    @apply bg-[url('/src/images/background-pricing.jpg')] bg-fixed bg-no-repeat bg-cover w-full h-auto;
+}
+
+.top-sound-btn {
+    @apply top-0 left-0 w-[3%] h-auto mt-[2%] ml-[2%];
+}
+
+.bottom-sound-btn {
+    @apply bottom-[10%] left-[2%] h-auto w-[3%];
+}
+
+
+/* references button click */
+
+.reference-1-close {
+    @apply right-[-28.2vw]
+}
+
+.reference-1-open {
+    @apply right-0
+}
+
+
+/* Vue.js transition animation  */
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1s;
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+{
+    opacity: 0;
+}
+
+.page-button-reference {
+    @apply absolute pointer-events-none bottom-[130%];
+}.hovCovid.svelte-1vloheq{transform:scale(1);transition:1s}.hovCovid.svelte-1vloheq:hover{transform:scale(1.1);transition:1s}.modal-covid.svelte-1vloheq{position:fixed;margin:0 auto;top:13%;right:0;z-index:2;left:0;bottom:0;width:75%}.c19.svelte-1vloheq{width:75%;margin-top:2%}.ref.svelte-1vloheq{position:absolute;background-color:none;background:none;border:none;top:-1%;right:-0.4%}.reference.svelte-1vloheq{height:100vh}.reference2.svelte-1vloheq{height:15vh}.ref2.svelte-1vloheq{position:absolute;background-color:none;background:none;border:none;top:-1%;right:-0.4%;bottom:-45%}button.svelte-1vloheq{background-color:none;background:none;border:none;cursor:pointer}button.svelte-1vloheq:active{outline:none;border:none}button.svelte-1vloheq:focus{outline:0;background-color:none;background:none}.btnBG.svelte-16jpn0s{background-color:#ff9d14;color:white;font-weight:bold;margin-top:3px}.btnBG2.svelte-16jpn0s{background-color:#ff0000;color:white;font-weight:bold;border-top-left-radius:20px;border-bottom-left-radius:20px}.btnBGS.svelte-16jpn0s{background-color:#ff6600;margin-top:-4px;height:32px;border-top-left-radius:20px;border-top-right-radius:20px;color:white;font-weight:bold}.navigation.svelte-16jpn0s{position:absolute;width:100%;bottom:0;background-color:#ffffff;padding-top:5px;z-index:1000}button.svelte-16jpn0s:focus{outline:0;background-color:#ff6600;background:#ff6600;border:none}.bg1.svelte-1n5kf0p{background-image:url("../assets/2/ACTION-CONTENT1-BG.png");background-repeat:no-repeat;background-size:100% 100%;height:100%;padding:1% 1% 1% 1%}.bg2.svelte-1n5kf0p{background-image:url("../assets/2/ACTION-CONTENT2-BG.png");background-repeat:no-repeat;background-size:100% 100%;height:100%;padding:1% 1% 1% 1%}.ref.svelte-1n5kf0p{position:absolute;background-color:none;background:none;border:none;top:-1%;right:-0.4%}.reference.svelte-1n5kf0p{height:100vh}.reference2.svelte-1n5kf0p{height:15vh}.ref2.svelte-1n5kf0p{position:absolute;background-color:none;background:none;border:none;top:-1%;right:-0.4%;bottom:-45%}button.svelte-1n5kf0p{background-color:none;background:none;border:none;cursor:pointer}button.svelte-1n5kf0p:active{outline:none;border:none}button.svelte-1n5kf0p:focus{outline:0;background-color:none;background:none}.ref.svelte-ydo36i{position:absolute;background-color:none;background:none;border:none;top:-1%;right:-0.4%}.reference.svelte-ydo36i{height:100vh}.reference2.svelte-ydo36i{height:15vh}.ref2.svelte-ydo36i{position:absolute;background-color:none;background:none;border:none;top:-1%;right:-0.4%;bottom:-45%}button.svelte-ydo36i:active{outline:none;border:none}button.svelte-ydo36i:focus{outline:0;background-color:none;background:none}.hoverBio.svelte-j6emr0{transform:scale(1);transition:1s}.hoverBio.svelte-j6emr0:hover{transform:scale(1.1);transition:1s}.modal-bio.svelte-j6emr0{position:fixed;margin:10% auto;top:0;right:0;z-index:2;left:0;bottom:0;width:45%}.ref.svelte-j6emr0{position:absolute;background-color:none;background:none;border:none;top:-1%;right:-0.4%}.reference.svelte-j6emr0{height:100vh}.reference2.svelte-j6emr0{height:15vh}.ref2.svelte-j6emr0{position:absolute;background-color:none;background:none;border:none;top:-1%;right:-0.4%;bottom:-45%}button.svelte-j6emr0{background-color:none;background:none;border:none;cursor:pointer}button.svelte-j6emr0:active{outline:none;border:none}button.svelte-j6emr0:focus{outline:0;background-color:none;background:none}.hovEfficacy.svelte-h84aac{transform:scale(1);transition:1s}.hovEfficacy.svelte-h84aac:hover{transform:scale(1.1);transition:1s}.modal-efficacy.svelte-h84aac{position:fixed;margin:17% auto;top:0;right:0;z-index:2;left:0;bottom:0;width:70%}.ref.svelte-h84aac{position:absolute;background-color:none;background:none;border:none;top:-1%;z-index:100;right:-0.4%}.reference.svelte-h84aac{height:100vh}.reference2.svelte-h84aac{height:15vh}.ref2.svelte-h84aac{position:absolute;background-color:none;background:none;border:none;top:-1%;right:-0.4%;bottom:-45%}button.svelte-h84aac{background-color:none;background:none;border:none;cursor:pointer}button.svelte-h84aac:active{outline:none;border:none}button.svelte-h84aac:focus{outline:0;background-color:none;background:none}
