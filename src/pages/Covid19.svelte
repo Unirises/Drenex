@@ -6,7 +6,6 @@
     let modal2 = false;
     let modal3 = false;
     let modalShow = false;
-    let setting= ''
 
     function covidModal1() {
         modal1 = true;
