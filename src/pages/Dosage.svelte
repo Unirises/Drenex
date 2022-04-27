@@ -7,6 +7,20 @@
 </svelte:head>
 <section class="bg-dosage">
 
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <img src="assets/6/final.png" style="width: 80%;" alt="">
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <img src="assets/6/DOSAGE-CONTENT_2.png" style="width: 50%; position:absolute; bottom:0; left:0; right:0; margin:0 auto;" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
     {#if reference == "closed"}
     <button class="ref2" in:fade out:fade on:click="{()=> {reference = "open"}}">
         <img
