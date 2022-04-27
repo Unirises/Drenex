@@ -26,7 +26,7 @@
                     style="width: 75%;"
                     alt=""
                 />
-                    <button style="width: 100%;" on:click="{()=>{showModal()}}">
+                    <button style="width: 100%;" class="hoverBio" on:click="{()=>{showModal()}}">
                         <img
                             src="assets/4/default/BIOA-CONTENT-DEFAULT.png"
                             style="margin-top: 5%; width:100%;"
@@ -84,6 +84,14 @@
 </section>
 
 <style>
+    .hoverBio{
+        transform: scale(1);
+        transition: 1s;
+    }
+    .hoverBio:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
     .modal-bio {
         position: fixed;
         margin: 10% auto;

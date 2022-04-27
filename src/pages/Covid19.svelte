@@ -27,6 +27,7 @@
         modal2 = false;
         modal3 = false;
         modalShow = false;
+        bg_covid ="bg-covid19";
     }
 </script>
 
@@ -37,7 +38,7 @@
     <div class="text-center">
         <img
             src="assets/5/COVID19-HEADER.png"
-            style="width: 75%; margin-top:5%;"
+            style="width: 75%; margin-top:4%;"
             alt=""
         />
         {#if modalShow}
@@ -66,11 +67,10 @@
             </button>
         {:else}
             <button
-                class="c19"
+                class="c19 hovCovid"
                 on:click={() => {
                     covidModal1();
                 }}
-                in:fade
             >
                 <img
                     src="assets/5/default/COVID19-CONTENT-1-DEFAULT.png"
@@ -79,7 +79,7 @@
                 />
             </button>
             <button
-                class="c19"
+                class="c19 hovCovid"
                 in:fade
                 on:click={() => {
                     covidModal2();
@@ -92,7 +92,7 @@
                 />
             </button>
             <button
-                class="c19"
+                class="c19 hovCovid"
                 in:fade
                 on:click={() => {
                     covidModal3();
@@ -191,7 +191,7 @@
             }}
         >
             <img
-                src="assets/2/Reference/ACTION-REFERENCE-TAB-ACTIVE-WTEXT.png"
+                src="assets/5/references/COVID19-REFERENCE-TAB-ACTIVE-WTEXT.png"
                 class="reference"
                 alt=""
             />
@@ -200,6 +200,14 @@
 </section>
 
 <style>
+    .hovCovid{
+        transform: scale(1);
+        transition: 1s;
+    }
+    .hovCovid:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
     .modal-covid {
         position: fixed;
         margin: 0 auto;
@@ -212,7 +220,7 @@
     }
     .c19 {
         width: 75%;
-        margin-top: 1.5%;
+        margin-top: 2%;
     }
     .ref {
         position: absolute;

@@ -56,6 +56,7 @@
                 on:click={() => {
                     modalshow1();
                 }}
+                class="hovEfficacy"
             >
                 <img
                     src="assets/3/default/EFFICACY-CONTENT-1-DEFAULT.png"
@@ -68,6 +69,7 @@
                 on:click={() => {
                     modalshow2();
                 }}
+                class="hovEfficacy"
             >
                 <img
                     src="assets/3/default/EFFICACY-CONTENT-2-DEFAULT.png"
@@ -150,6 +152,14 @@
 </section>
 
 <style>
+    .hovEfficacy{
+        transform: scale(1);
+        transition: 1s;
+    }
+   .hovEfficacy:hover{
+       transform: scale(1.1);
+       transition: 1s;
+   }
     .modal-efficacy {
         position: fixed;
         margin: 17% auto;
