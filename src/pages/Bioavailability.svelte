@@ -25,12 +25,14 @@
                     src="assets/4/BIOA-HEADER.png"
                     style="width: 75%;"
                     alt=""
+                    class="animate__animated animate__fadeInTopLeft"
                 />
                     <button style="width: 100%;" class="hoverBio" on:click="{()=>{showModal()}}">
                         <img
                             src="assets/4/default/BIOA-CONTENT-DEFAULT.png"
                             style="margin-top: 5%; width:100%;"
                             alt=""
+                            class="animate__animated animate__bounceIn animate__delay-1s"
                         />
                     </button>
                 {/if}

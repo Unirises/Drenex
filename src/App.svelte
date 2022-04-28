@@ -1,5 +1,5 @@
 <script>
-	import Router from "svelte-spa-router";
+	import Router from 'svelte-spa-router';
 	import Nav from "./pages/Nav.svelte";
 
 	import Home from "./pages/Home.svelte";
@@ -24,6 +24,31 @@
 </script>
 
 
+{#if password == bind_password}
+
 <Router {routes} />
 
 <Nav />
+{:else}
+<div class="bg-home">
+	<div class="text-center">
+			<img src="assets/1/HOME-LOGO_uap.png" style="width: 10%; margin-top:30vh;" alt="Kastair logo"><br>
+			<input type="text" required class="mt-4 inputLogin" placeholder="Type the password here." bind:value="{bind_password}">
+			<br>
+			<label for class="mt-2 text-white">Please input the correct password to continue.</label>
+		</div>
+	
+</div>
+
+
+{/if}
+<style>
+	.inputLogin{
+		padding: 10px;
+		width: 400px;
+		border-radius: 10px;
+	}
+	.inputLogin:focus{
+		outline: none;
+	}
+</style>

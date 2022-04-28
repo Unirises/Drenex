@@ -34,6 +34,7 @@
             src="assets/3/EFFICACY-HEADER.png"
             style="width: 40%; margin-top:5%;"
             alt=""
+            class="animate__animated animate__bounceIn"
         />
         {#if modalshow}
             <button style="width: 70%;">
@@ -62,6 +63,7 @@
                     src="assets/3/default/EFFICACY-CONTENT-1-DEFAULT.png"
                     style="width: 100%; margin-top:5%;"
                     alt=""
+                    class="animate__animated animate__fadeInLeft"
                 />
             </button>
             <button
@@ -75,6 +77,7 @@
                     src="assets/3/default/EFFICACY-CONTENT-2-DEFAULT.png"
                     style="width: 100%; margin-top:5%;"
                     alt=""
+                    class="animate__animated animate__fadeInRight"
                 />
             </button>
         {/if}

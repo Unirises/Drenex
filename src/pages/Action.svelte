@@ -109,11 +109,12 @@
             src="assets/2/ACTION-HEADER.png"
             style="width: 70%; margin-top:5%;"
             alt=""
+            class="animate__animated animate__fadeIn"
         />
 
         <div style="margin-left: 10%; margin-right:10%; margin-top:1%;">
             <div class="row" style="padding-left: 10%;">
-                <div class="col-lg-5 bg1 mr-3">
+                <div class="col-lg-5 bg1 mr-3 animate__animated animate__fadeInLeft">
                     <img
                         src="assets/2/ACTION-SUBHEADER1.png"
                         style="width:100%;"
@@ -184,7 +185,7 @@
                         </button><br />
                     </div>
                 </div>
-                <div class="col-lg-5 bg2 ml-3">
+                <div class="col-lg-5 bg2 ml-3 animate__animated animate__fadeInRight">
                     <img
                         src="assets/2/ACTION-SUBHEADER2.png"
                         style="width:99.5%;"

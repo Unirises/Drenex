@@ -9,11 +9,11 @@
 
     <div class="row">
         <div class="col-sm-6 text-center">
-            <img src="assets/6/final.png" style="width: 80%;" alt="">
+            <img src="assets/6/final.png" style="width: 80%;" class="animate__animated animate__fadeIn" alt="">
         </div>
         <div class="col-sm-6">
             <div>
-                <img src="assets/6/DOSAGE-CONTENT_2.png" style="width: 50%; position:absolute; bottom:0; left:0; right:0; margin:0 auto;" alt="">
+                <img src="assets/6/DOSAGE-CONTENT_2.png" class="animate__animated animate__fadeIn animate__delay-1s" style="width: 50%; position:absolute; bottom:0; left:0; right:0; margin:0 auto;" alt="">
             </div>
         </div>
 

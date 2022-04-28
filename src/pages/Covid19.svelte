@@ -40,6 +40,7 @@
             src="assets/5/COVID19-HEADER.png"
             style="width: 75%; margin-top:4%;"
             alt=""
+            class="animate__animated animate__fadeIn"
         />
         {#if modalShow}
             <button class="c19">
@@ -76,6 +77,7 @@
                     src="assets/5/default/COVID19-CONTENT-1-DEFAULT.png"
                     style="width: 100%;"
                     alt=""
+                    class="animate__animated animate__bounceInLeft animate__delay-1s"
                 />
             </button>
             <button
@@ -89,6 +91,7 @@
                     src="assets/5/default/COVID19-CONTENT-2-DEFAULT.png"
                     style="width: 100%;"
                     alt=""
+                    class="animate__animated animate__bounceInRight animate__delay-2s"
                 />
             </button>
             <button
@@ -102,6 +105,7 @@
                     src="assets/5/default/COVID19-CONTENT-3-DEFAULT.png"
                     style="width: 100%;"
                     alt=""
+                    class="animate__animated animate__bounceInLeft animate__delay-3s"
                 />
             </button>
         {/if}
