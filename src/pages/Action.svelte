@@ -15,7 +15,7 @@
     let wc3 = "10%";
     let wc4 = "10%";
 
-    let wc5 = "12.5%";
+    let wc5 = "13%";
     let wc6 = "10.2%";
     let wc7 = "10.2%";
     let wc8 = "10.2%";
@@ -24,7 +24,7 @@
     function ck1(){
         if(c1 == true){
             c1=false;
-            wc1 = "40%";
+            wc1 = "37%";
         }else{
             c1=true;
             wc1 = "10%";
@@ -33,7 +33,7 @@
     function ck2(){
         if(c2 == true){
             c2=false;
-            wc2 = "31%";
+            wc2 = "29%";
         }else{
             c2=true;
             wc2 = "10%";
@@ -42,7 +42,7 @@
     function ck3(){
         if(c3 == true){
             c3=false;
-            wc3 = "41%";
+            wc3 = "39%";
         }else{
             c3=true;
             wc3 = "10%";
@@ -51,7 +51,7 @@
     function ck4(){
         if(c4 == true){
             c4=false;
-            wc4 = "26%";
+            wc4 = "24%";
         }else{
             c4=true;
             wc4 = "10%";
@@ -61,7 +61,7 @@
     function ck5(){
         if(c5 == true){
             c5=false;
-            wc5 = "30%";
+            wc5 = "26%";
         }else{
             c5=true;
             wc5 = "12.5%";
@@ -71,7 +71,7 @@
     function ck6(){
         if(c6 == true){
             c6=false;
-            wc6 = "39%";
+            wc6 = "36%";
         }else{
             c6=true;
             wc6 = "10.2%";
@@ -81,7 +81,7 @@
     function ck7(){
         if(c7 == true){
             c7=false;
-            wc7 = "44%";
+            wc7 = "40%";
         }else{
             c7=true;
             wc7 = "10.2%";
@@ -90,7 +90,7 @@
     function ck8(){
         if(c8 == true){
             c8=false;
-            wc8 = "44%";
+            wc8 = "40%";
         }else{
             c8=true;
             wc8 = "10.2%";

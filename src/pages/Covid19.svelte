@@ -38,7 +38,7 @@
     <div class="text-center">
         <img
             src="assets/5/COVID19-HEADER.png"
-            style="width: 75%; margin-top:4%;"
+            style="width: 75%; margin-top:4%; margin-bottom:2%;"
             alt=""
             class="animate__animated animate__fadeIn"
         />
@@ -224,7 +224,7 @@
     }
     .c19 {
         width: 75%;
-        margin-top: 2%;
+        margin-top: .5%;
     }
     .ref {
         position: absolute;

@@ -40,14 +40,14 @@
             <button style="width: 70%;">
                 <img
                     src="assets/3/clicked/EFFICACY-CONTENT-2-DEFAULT-BLUR.png"
-                    style="width: 100%; margin-top:5%;"
+                    style="width: 100%; margin-top:2.5%;"
                     alt=""
                 />
             </button>
             <button style="width: 70%;">
                 <img
                     src="assets/3/clicked/EFFICACY-CONTENT-1-DEFAULT-BLUR.png"
-                    style="width: 100%; margin-top:5%;"
+                    style="width: 100%; margin-top:2.5%;"
                     alt=""
                 />
             </button>
@@ -61,7 +61,7 @@
             >
                 <img
                     src="assets/3/default/EFFICACY-CONTENT-1-DEFAULT.png"
-                    style="width: 100%; margin-top:5%;"
+                    style="width: 100%; margin-top:2.5%;"
                     alt=""
                     class="animate__animated animate__fadeInLeft"
                 />
@@ -75,7 +75,7 @@
             >
                 <img
                     src="assets/3/default/EFFICACY-CONTENT-2-DEFAULT.png"
-                    style="width: 100%; margin-top:5%;"
+                    style="width: 100%; margin-top:2.5%;"
                     alt=""
                     class="animate__animated animate__fadeInRight"
                 />
